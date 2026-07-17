@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stella Igwe · Executive Virtual Assistant</title>
+    <meta name="description"
+        content="Executive Virtual Assistant · Systems, Content &amp; Operations Support for Busy Founders &amp; Professionals." />
+
+    <!-- ===== SOCIAL PREVIEW (Open Graph / Twitter Cards) ===== -->
+    <meta property="og:title" content="Stella Igwe · Executive Virtual Assistant" />
+    <meta property="og:description"
+        content="Executive Virtual Assistant · Systems, Content &amp; Operations Support for Busy Founders &amp; Professionals." />
+    <meta property="og:url" content="https://IamSalvation.github.io/stella_portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://IamSalvation.github.io/stella_portfolio/assets/stella.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stella Igwe · Executive Virtual Assistant" />
+    <meta name="twitter:description"
+        content="Executive Virtual Assistant · Systems, Content &amp; Operations Support for Busy Founders &amp; Professionals." />
+    <meta name="twitter:image" content="https://IamSalvation.github.io/stella_portfolio/assets/stella.jpg" />
+
+    <!-- Font Awesome 6 (stable) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== PROGRESS BAR ===== -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ===== NOISE OVERLAY ===== -->
+    <div class="noise-overlay"></div>
+
+    <!-- ===== GLOW TRAIL ===== -->
+    <div class="glow-trail" id="glowTrail"></div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- ===== GEOMETRIC SHAPES ===== -->
+    <div class="geometric-shapes" id="geometricShapes"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#hero" class="logo">Stella<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#work-samples">Samples</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#booking">Book</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="particles-container" id="particlesContainer"></div>
+        <div class="hero-glow"></div>
+
+        <div class="container hero-container hero-reverse">
+            <!-- LEFT: Content -->
+            <div class="hero-content-right">
+                <div class="hero-badge">✦ Executive Virtual Assistant</div>
+                <h1 class="hero-title">
+                    Empowering <span>Founders</span> with<br />
+                    <span class="typewriter-wrapper">
+                        <span id="typewriterText"></span>
+                        <span class="cursor-blink">|</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">Systems · Content · Operations Support for Busy Founders &amp; Professionals
+                </p>
+
+                <div class="hero-trust-badges">
+                    <span><i class="fas fa-shield-alt"></i> Systems &amp; Ops</span>
+                    <span><i class="fas fa-file-alt"></i> Content Planning</span>
+                    <span><i class="fas fa-calendar-check"></i> Workflow Coordination</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary btn-ripple">Book 1-on-1 Consultation</a>
+                    <a href="#services" class="btn btn-outline">View Services</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Image Frame -->
+            <div class="hero-image-right">
+                <div class="hero-image-new-frame tilt-card">
+                    <div class="hero-image-new-inner">
+                        <img src="./assets/stella.jpg" alt="Stella Igwe" />
+                        <div class="hero-image-new-overlay"></div>
+                    </div>
+                    <div class="hero-image-new-ring"></div>
+                    <div class="hero-image-new-dots"></div>
+                    <div class="hero-image-new-badge">✦ Executive VA</div>
+                </div>
+
+                <!-- STATS BAR -->
+                <div class="hero-stats-bar">
+                    <div class="stat-item">
+                        <strong class="counter" data-target="3">0</strong>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong class="counter" data-target="500" data-suffix="+">0</strong>
+                        <span>Connections</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong class="counter" data-target="20">0</strong>
+                        <span>Clients Supported</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text-side">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Executive Support. <span>Systems Mindset.</span></h2>
+                    <p>I help founders, entrepreneurs, and busy professionals stay organized, visible, and consistent —
+                        without burning out or losing focus on what actually grows their business.</p>
+                    <p>As an <strong>Executive Virtual Assistant</strong>, I support clients with administrative and
+                        executive support, social media content planning, workflow organization, and operational
+                        research.</p>
+                    <p>My goal is simple: help you get out of the overwhelm cycle so you can focus on decisions, growth,
+                        and execution.</p>
+                    <a href="#booking" class="btn btn-primary btn-ripple">Book 1-on-1 Consultation</a>
+                </div>
+                <div class="about-highlights-cards">
+                    <div class="highlight-card">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Proactive &amp; Detail-Oriented</h4>
+                        <p>I anticipate your needs before you ask, ensuring nothing slips through the cracks.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Anticipates Needs, Not Just Tasks</h4>
+                        <p>I think strategically about what will move your business forward, not just check off to-dos.
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-sitemap"></i>
+                        <h4>Brings Structure to Chaos</h4>
+                        <p>I transform disorganized workflows into clear, efficient systems that drive results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TOOLS (20 Tools) ===== -->
+    <section class="tools-section" id="tools">
+        <div class="container">
+            <span class="section-tag">My Toolbox</span>
+            <h2 class="section-title">Tools I <span>Master</span></h2>
+            <div class="tools-grid">
+                <div class="tool-card"><i class="fas fa-google"></i><span>Google Workspace</span></div>
+                <div class="tool-card"><i class="fas fa-brain"></i><span>Notion</span></div>
+                <div class="tool-card"><i class="fab fa-trello"></i><span>Trello</span></div>
+                <div class="tool-card"><i class="fab fa-canva"></i><span>Canva</span></div>
+                <div class="tool-card"><i class="fab fa-slack"></i><span>Slack</span></div>
+                <div class="tool-card"><i class="fas fa-video"></i><span>Zoom</span></div>
+                <div class="tool-card"><i class="fas fa-robot"></i><span>ChatGPT</span></div>
+                <div class="tool-card"><i class="fas fa-calendar-alt"></i><span>Calendly</span></div>
+                <div class="tool-card"><i class="fab fa-microsoft"></i><span>Microsoft 365</span></div>
+                <div class="tool-card"><i class="fas fa-cloud"></i><span>Dropbox</span></div>
+                <div class="tool-card"><i class="fab fa-asana"></i><span>Asana</span></div>
+                <div class="tool-card"><i class="fas fa-database"></i><span>Airtable</span></div>
+                <div class="tool-card"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="tool-card"><i class="fas fa-file-pdf"></i><span>Adobe Acrobat</span></div>
+                <div class="tool-card"><i class="fas fa-clock"></i><span>Clockify</span></div>
+                <div class="tool-card"><i class="fas fa-mail-bulk"></i><span>Mailchimp</span></div>
+                <div class="tool-card"><i class="fas fa-hashtag"></i><span>Buffer</span></div>
+                <div class="tool-card"><i class="fas fa-camera"></i><span>Loom</span></div>
+                <div class="tool-card"><i class="fas fa-phone-alt"></i><span>RingCentral</span></div>
+                <div class="tool-card"><i class="fas fa-share-alt"></i><span>Later</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">Executive <span>Services</span></h2>
+                <p class="section-sub">Comprehensive administrative and operational support for busy professionals.</p>
+            </div>
+
+            <div class="services-grid-new">
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Inbox Management</h3>
+                    <p>Organized communication, priority triage, and clean inbox workflows.</p>
+                    <span class="service-new-number">01</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Calendar Management</h3>
+                    <p>Structured scheduling, meeting coordination, and time optimization.</p>
+                    <span class="service-new-number">02</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Project Coordination</h3>
+                    <p>Task tracking, execution, and cross-functional alignment.</p>
+                    <span class="service-new-number">03</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Meeting Management</h3>
+                    <p>Structured agendas, notes, and follow-through for efficient meetings.</p>
+                    <span class="service-new-number">04</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-search"></i></div>
+                    <h3>Research &amp; Data</h3>
+                    <p>Clear, organized insights to support decisions and strategy.</p>
+                    <span class="service-new-number">05</span>
+                </div>
+                <div class="service-new">
+                    <div class="service-new-icon"><i class="fas fa-plane"></i></div>
+                    <h3>Travel Planning</h3>
+                    <p>Seamless itineraries, bookings, and stress‑free arrangements.</p>
+                    <span class="service-new-number">06</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="experience-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Where I've <span>Worked</span></h2>
+            </div>
+
+            <div class="experience-grid-new">
+                <div class="exp-new">
+                    <div class="exp-new-marker"></div>
+                    <div class="exp-new-content">
+                        <div class="exp-new-header">
+                            <h3>Virtual Assistant</h3>
+                            <span class="exp-new-company">MicroTech Africa · Internship</span>
+                            <span class="exp-new-date">Jun 2026 – Present</span>
+                        </div>
+                        <p>Project coordination, confidentiality management, and cross‑functional communication.</p>
+                        <div class="exp-new-skills">
+                            <span>Project Coordination</span>
+                            <span>Confidentiality</span>
+                            <span>Admin Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-new">
+                    <div class="exp-new-marker"></div>
+                    <div class="exp-new-content">
+                        <div class="exp-new-header">
+                            <h3>Social Media Manager</h3>
+                            <span class="exp-new-company">Internflare · Freelance</span>
+                            <span class="exp-new-date">Apr 2026 – Jul 2026</span>
+                        </div>
+                        <p>Managed and scheduled content across multiple social platforms. Data entry, email management,
+                            and content calendar coordination.</p>
+                        <div class="exp-new-skills">
+                            <span>Content Planning</span>
+                            <span>Email Management</span>
+                            <span>Data Entry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-new">
+                    <div class="exp-new-marker"></div>
+                    <div class="exp-new-content">
+                        <div class="exp-new-header">
+                            <h3>Virtual Assistant</h3>
+                            <span class="exp-new-company">Easyon Company · Freelance</span>
+                            <span class="exp-new-date">Apr 2025 – Dec 2025</span>
+                        </div>
+                        <p>Provided remote administrative support for entrepreneurs and corporate clients.</p>
+                        <div class="exp-new-skills">
+                            <span>Data Entry</span>
+                            <span>Email Management</span>
+                            <span>Operational Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORK (Case Studies) ===== -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="work-header">
+                <span class="section-tag">Case Studies</span>
+                <h2 class="section-title">Tasked. Managed. <span>Delivered.</span></h2>
+                <p class="section-sub">Click any card to view the full case study.</p>
+            </div>
+
+            <div class="work-grid-new">
+                <div class="work-new" data-case="notion">
+                    <div class="work-new-icon"><i class="fas fa-brain"></i></div>
+                    <h3>LinkedIn Content Calendar</h3>
+                    <p>Notion system for content planning &amp; scheduling</p>
+                    <span class="work-new-cta">View case study →</span>
+                </div>
+                <div class="work-new" data-case="skincare">
+                    <div class="work-new-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Skincare Brand Support</h3>
+                    <p>Customer tracking &amp; operational efficiency</p>
+                    <span class="work-new-cta">View case study →</span>
+                </div>
+                <div class="work-new" data-case="travel">
+                    <div class="work-new-icon"><i class="fas fa-plane"></i></div>
+                    <h3>Travel Planning Itinerary</h3>
+                    <p>Structured logistics &amp; stress‑free arrangements</p>
+                    <span class="work-new-cta">View case study →</span>
+                </div>
+                <div class="work-new" data-case="google">
+                    <div class="work-new-icon"><i class="fas fa-google"></i></div>
+                    <h3>Google Workspace Ops</h3>
+                    <p>Workflow management &amp; team coordination</p>
+                    <span class="work-new-cta">View case study →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CASE STUDY MODAL ===== -->
+    <div class="modal-overlay" id="caseModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- ===== WORK SAMPLES (9 Items - Auto Smooth Carousel) ===== -->
+    <section class="work-samples" id="work-samples">
+        <div class="container">
+            <span class="section-tag">Work Samples</span>
+            <h2 class="section-title">My <span>Recent Work</span></h2>
+            <p class="section-sub">A glimpse into projects I've delivered for clients.</p>
+
+            <div class="work-samples-carousel-wrapper">
+                <div class="work-samples-track" id="workSamplesTrack">
+                    <!-- 9 Unique Work Samples -->
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/content-calendar.jpg" alt="Content Calendar System" />
+                            <div class="work-sample-overlay">
+                                <h3>Content Calendar System</h3>
+                                <p>Notion · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/brand.jpg" alt="Brand Support Dashboard" />
+                            <div class="work-sample-overlay">
+                                <h3>Brand Support Dashboard</h3>
+                                <p>Google Sheets · Canva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/travel.jpg" alt="Travel Itinerary Planner" />
+                            <div class="work-sample-overlay">
+                                <h3>Travel Itinerary Planner</h3>
+                                <p>Google Docs · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/client-sheet.jpg" alt="Google Workspace Ops" />
+                            <div class="work-sample-overlay">
+                                <h3>Google Workspace Ops</h3>
+                                <p>Workflow Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/inbox-mgt.jpg" alt="Email Management System" />
+                            <div class="work-sample-overlay">
+                                <h3>Email Management System</h3>
+                                <p>Gmail · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/client-trello.jpg" alt="Project Dashboard Trello" />
+                            <div class="work-sample-overlay">
+                                <h3>Project Dashboard</h3>
+                                <p>Trello · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/content-calendar.jpg" alt="Social Media Content Planner" />
+                            <div class="work-sample-overlay">
+                                <h3>Social Media Planner</h3>
+                                <p>Buffer · Canva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/client-tracking.jpg" alt="Client Onboarding System" />
+                            <div class="work-sample-overlay">
+                                <h3>Client Onboarding System</h3>
+                                <p>Notion · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/meeting.jpg" alt="Meeting Minutes Template" />
+                            <div class="work-sample-overlay">
+                                <h3>Meeting Minutes Template</h3>
+                                <p>Google Docs · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate first 3 for seamless loop -->
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/content-calendar.jpg" alt="Content Calendar System" />
+                            <div class="work-sample-overlay">
+                                <h3>Content Calendar System</h3>
+                                <p>Notion · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/brand.jpg" alt="Brand Support Dashboard" />
+                            <div class="work-sample-overlay">
+                                <h3>Brand Support Dashboard</h3>
+                                <p>Google Sheets · Canva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-sample-item">
+                        <div class="work-sample-image">
+                            <img src="./assets/travel.jpg" alt="Travel Itinerary Planner" />
+                            <div class="work-sample-overlay">
+                                <h3>Travel Itinerary Planner</h3>
+                                <p>Google Docs · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS (10 Testimonials - Continuous Auto Carousel) ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients <span>Say</span></h2>
+            </div>
+
+            <div class="testimonial-carousel-wrapper">
+                <div class="testimonial-carousel-track" id="testimonialCarouselTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Stella organized workflows and managed communication with exceptional efficiency. Her
+                                approach was thoughtful, proactive, and aligned with real business needs.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">F</div>
+                                <div>
+                                    <strong>Founder, SaaS Startup</strong>
+                                    <span>Client Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>She took full ownership of our content calendar, planning and scheduling posts with
+                                consistency and creativity. A game-changer for our brand presence.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">C</div>
+                                <div>
+                                    <strong>CEO, Wellness Brand</strong>
+                                    <span>Brand Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Her structured approach to task coordination improved our team's accountability and
+                                efficiency significantly. I never had to worry about follow-ups.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">T</div>
+                                <div>
+                                    <strong>Team Lead, MicroTech</strong>
+                                    <span>Operations Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Stella's support in our operations has been outstanding. Her attention to detail and
+                                understanding of workflows made a significant difference.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">M</div>
+                                <div>
+                                    <strong>Operations Lead</strong>
+                                    <span>Project Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Working with Stella was effortless. She took initiative and kept everything running
+                                smoothly without me having to worry about a thing.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">S</div>
+                                <div>
+                                    <strong>Satisfied Client</strong>
+                                    <span>Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Stella coordinated multiple projects with precision and professionalism. Her structured
+                                approach improved our team's efficiency significantly.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">E</div>
+                                <div>
+                                    <strong>Executive Client</strong>
+                                    <span>Business Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 7 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Stella is an absolute professional. She manages tasks with precision and always delivers
+                                ahead of schedule. A true asset to any team.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">R</div>
+                                <div>
+                                    <strong>Operations Manager</strong>
+                                    <span>Corporate Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 8 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>I was struggling with inbox overload until Stella stepped in. She cleared my inbox,
+                                organized my calendar, and gave me back hours of my day.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">J</div>
+                                <div>
+                                    <strong>CEO, Tech Firm</strong>
+                                    <span>Long-term Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 9 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Her ability to anticipate needs and solve problems before they arise is remarkable.
+                                Stella doesn't just do tasks — she thinks strategically.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">D</div>
+                                <div>
+                                    <strong>Director, Growth Agency</strong>
+                                    <span>Strategic Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 10 -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Stella brought structure to our chaotic workflow. She implemented systems that improved
+                                our team's productivity by 40%. Highly recommend!</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">L</div>
+                                <div>
+                                    <strong>VP, Operations</strong>
+                                    <span>Business Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate first 3 for seamless loop -->
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Stella organized workflows and managed communication with exceptional efficiency. Her
+                                approach was thoughtful, proactive, and aligned with real business needs.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">F</div>
+                                <div>
+                                    <strong>Founder, SaaS Startup</strong>
+                                    <span>Client Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>She took full ownership of our content calendar, planning and scheduling posts with
+                                consistency and creativity. A game-changer for our brand presence.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">C</div>
+                                <div>
+                                    <strong>CEO, Wellness Brand</strong>
+                                    <span>Brand Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-carousel-item">
+                        <div class="testimonial-carousel-content">
+                            <div class="testimonial-carousel-quote">"</div>
+                            <p>Her structured approach to task coordination improved our team's accountability and
+                                efficiency significantly. I never had to worry about follow-ups.</p>
+                            <div class="testimonial-carousel-author">
+                                <div class="testimonial-carousel-avatar">T</div>
+                                <div>
+                                    <strong>Team Lead, MicroTech</strong>
+                                    <span>Operations Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation Dots -->
+                <div class="testimonial-carousel-dots" id="testimonialDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BOOKING ===== -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-content">
+                    <span class="section-tag"
+                        style="color:var(--gold); border-color:rgba(212,175,55,0.3);">Schedule</span>
+                    <h2>Book a <span>1-on-1 Consultation</span></h2>
+                    <p>Ready to streamline your operations? Let's talk about how I can help you focus on what matters.
+                    </p>
+                    <div class="booking-details">
+                        <a href="mailto:stellaigweva@gmail.com"><i class="fas fa-envelope"></i>
+                            stellaigweva@gmail.com</a>
+                        <a href="tel:+2348165121505"><i class="fas fa-phone"></i> +234 816 512 1505</a>
+                    </div>
+                    <div class="booking-buttons">
+                        <a href="https://calendly.com/stellaigweva/30min" target="_blank"
+                            class="btn btn-primary btn-block">Book 1-on-1 Consultation</a>
+                        <a href="https://wa.me/2348165121505" target="_blank" class="btn btn-whatsapp btn-block"><i
+                                class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <span class="section-tag">Connect</span>
+                    <h2 class="section-title">Let's <span>Work Together</span></h2>
+                    <p>Reliability isn't a promise — it's my standard. Let's streamline your operations together.</p>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/stellaigwe" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/stellaremote_support" target="_blank"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/stella_sucre" target="_blank" aria-label="X (Twitter)"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/2348165121505" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm" action="https://formspree.io/f/meeyeole" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email address" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message"
+                                placeholder="Tell me about your business and what support you need..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Stella Igwe · Executive Virtual Assistant</p>
+            <p class="footer-tagline">Supporting founders with structure, clarity, and seamless operations.</p>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
