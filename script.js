@@ -161,7 +161,6 @@ if (customCursor) {
 function createGeometricShapes() {
     const container = document.getElementById('geometricShapes');
     if (!container) return;
-    // Add 5 shapes with CSS classes; they are styled in CSS
     for (let i = 1; i <= 5; i++) {
         const shape = document.createElement('div');
         shape.className = 'shape';
