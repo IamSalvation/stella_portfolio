@@ -1995,3 +1995,32 @@ footer .footer-tagline {
         font-size: 0.85rem;
     }
 }
+
+/* Add this at the very end of your CSS file */
+.hero-image-right {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero-image-new-frame {
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .hero-image-new-frame {
+        max-width: 260px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image-new-frame {
+        max-width: 200px !important;
+        padding: 6px !important;
+    }
+    .hero-image-new-badge {
+        font-size: 0.5rem !important;
+        padding: 3px 10px !important;
+        bottom: 5px !important;
+    }
+}
